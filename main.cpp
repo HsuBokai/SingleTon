@@ -1,6 +1,4 @@
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 #include "rand.h"
 
 // void bar(const Rand r) // copy make compile error !!
