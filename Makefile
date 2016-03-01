@@ -4,7 +4,7 @@ CC=g++
 CFLAGS= -g -Wall -I$(IDIR)
 
 TARGET = main
-OBJ = main.o rand.o 
+OBJ = main.o rand.o logger.o
 
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
