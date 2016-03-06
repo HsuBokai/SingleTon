@@ -18,7 +18,7 @@ Logger::Logger():_fd(-1) {
 	buf[len++] = 'o';
 	buf[len++] = 'g';
 	buf[len++] = '\0';
-	_fd = open(buf, O_WRONLY | O_CREAT | O_EXCL | O_FSYNC);
+	_fd = open(buf, O_WRONLY | O_CREAT | O_EXCL | O_FSYNC, 0644);
 	if(_fd < 0) fprintf(stderr, "Logger create file fail\n");
 }
 
